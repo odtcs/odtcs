@@ -53,12 +53,10 @@
 </head>
 <body>
 <div id="choice">
-	<button id="choice-morning">Ochtendprogramma</button>
-	<button id="choice-afternoon">Middagprogramma</button>
-</div>
-<div id="maximage" style="display:none;">
-    <div class="first-item">
-        <img src="images/img1.png" width="940" height="395" />
+	<button id="choice-morning">Morning programme</button>
+	<button id="choice-afternoon">Afternoon programme</button>
+	<div id="programme-template" style="display:none;">
+		<img src="images/img1.png" width="940" height="395" />
         <div class="in-slide-content programme morning">
 			<p><b>Morning programme</b></p>
 			<p>11:00 - Welcome at the study of technology that changes society</p>
@@ -86,6 +84,10 @@
 			<p>15:30 - Computer Science market in Zilverling - Educaf&eacute;</p>
 			<p>16:00 - Departure for afternoon programme or campusprogramme</p>
 		</div>
+	</div>
+</div>
+<div id="maximage" style="display:none;">
+    <div class="first-item prog">
     </div>	
 	<div>
 		<img src="images/img1.png" width="940" height="395" />
@@ -100,9 +102,10 @@
 		<div class="in-slide-content">
 			<p>Module 2</p>
 			<p>Software Systems</p>
-			<p>Create a online multiplayer board game - including Artificial Intelligence!</p>
+			<p>Create an online multiplayer board game - including Artificial Intelligence!</p>
 		</div>
     </div>
+	<div class="prog"></div>
 	<div>
 		<img src="images/img1.png" width="940" height="395" />
 		<div class="in-slide-content">
@@ -119,6 +122,7 @@
 			<p>Organize loads of data and turn it into a fully functioning web application.</p>
 		</div>
     </div>
+	<div class="prog"></div>
 	<div class="video">
 		<img src="images/img1.png" width="940" height="395" />
 		<video width="100%" height="100%">

@@ -9,6 +9,7 @@ $(function() {
 });
 
 function start(type) {
+	$('.prog').append($('#programme-template').html());
 	$('#choice').remove();
 	$('#maximage').show()
 	$('.programme').not('.' + type).remove();
@@ -26,7 +27,10 @@ function start(type) {
 				after: function(last,current){
 					//if(!$.browser.msie){
 						// Pauses HTML5 video when you leave it
-						if($(last).find('video').length > 0) $(last).find('video')[0].pause();
+						if($(last).find('video').length > 0) {
+							$(last).find('video')[0].pause();
+							$(last).find('video')[0].currentTime = 0;
+						}
 					//}
 				}
 		}
