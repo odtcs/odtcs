@@ -6,6 +6,11 @@
 	<script src="jquery.maximage.min.js" type="text/javascript"></script>
 	<script src="main.js"></script>
 	<style>
+	body {
+		margin: 0px;
+		padding: 0px;
+	}
+	
 	.in-slide-content { 
 		color:#333;
 		float:right;
@@ -22,24 +27,61 @@
 		text-shadow: 0 1px 0 #fff;
 		-webkit-font-smoothing:antialiased;
 	}
+	
+	.programme {
+		font-size:30px;
+		width:900px;
+	}
+	
+	button {
+		position: relative;
+		left: 5%;
+		margin-top: 5%;
+		width: 90%;
+		height: 40%;
+		font-size: 100px;
+		font-family:'Helvetica Neue', helvetica;
+		
+	}
 	</style>
 </head>
 <body>
-
-<div id="maximage">
+<div id="choice">
+	<button id="choice-morning">Ochtendprogramma</button>
+	<button id="choice-afternoon">Middagprogramma</button>
+</div>
+<div id="maximage" style="display:none;">
     <div class="first-item">
-        <img src="https://www.utwente.nl/.uc/i35/41f89801023da50f008f944003183b0b008243a8010701c3ac038b0180.png" alt="" width="940" height="395" />
-        <div class="in-slide-content">
-            <p>Inter-<i>Actief</i> is the study association of Technical Computer Science.</p>
-        </div>
+        <img src="images/img1.png" width="940" height="395" />
+        <div class="in-slide-content programme morning">
+			<p><b>Morning programme</b></p>
+			<p>11:00 - Welcome at the study of technology that changes society</p>
+			<p>11:05 - All about the bachelor Technical Computer Science</p>
+			<p>11:25 - Study Association Inter-<i>Actief</i></p>
+			<p>11:35 - Subdivide in different programmes:</p>
+			<ul>
+			<li>Workshop for students in hal B 2B & 2C</li>
+			<li>Parents programme in Ravelijn 1501</li>
+			</ul>
+			<p>12:25 - Lunch in Zilverling - Educaf&eacute;</p>
+			<p>13:10 - Computer Science market in Zilverling - Educaf&eacute;</p>
+			<p>13:45 - Departure for afternoon programme or campusprogramme</p>
+		</div>
+		<div class="in-slide-content programme afternoon">
+			<p><b>Afternoon programme</b></p>
+			<p>14:00 - Welcome at the study of technology that changes society</p>
+			<p>14:05 - All about the bachelor Technical Computer Science</p>
+			<p>14:20 - Study Association Inter-<i>Actief</i></p>
+			<p>14:30 - Subdivide in different programmes:</p>
+			<ul>
+			<li>Workshop for students in hal B 2B & 2C</li>
+			<li>Parents programme in Ravelijn 1501</li>
+			</ul>
+			<p>15:30 - Computer Science market in Zilverling - Educaf&eacute;</p>
+			<p>16:00 - Departure for afternoon programme or campusprogramme</p>
+		</div>
     </div>
-	<div class="first-item">
-        <img src="https://www.utwente.nl/.uc/i5b/d486d001026e440604f033e903c33a0b0087e647030701c3ac038b0180.jpg" alt=" width="940" height="395" />
-        <div class="in-slide-content">
-            <p>Inter-<i>Actief</i> is the study association of Technical Computer Science.</p>
-        </div>
-    </div>
-    <img src="https://www.utwente.nl/.uc/i5b/d486d001026e440604f033e903c33a0b0087e647030701c3ac038b0180.jpg" alt=" width="940" height="395" />
+    <img src="images/img2.jpg" width="940" height="395" />
 </div>
 </body>
 </html>
