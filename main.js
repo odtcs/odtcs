@@ -17,7 +17,7 @@ function start(type) {
 		cycleOptions: {
 				fx: 'fade',
 				speed: 1000, 
-				timeout: 5000,
+				timeout: 7000,
 				before: function(last,current){
 					//if(!$.browser.msie){
 						// Start HTML5 video when you arrive
